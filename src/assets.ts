@@ -407,20 +407,6 @@ export const text = {
   complete: [" 'cd' into your folder and enjoy! "],
 };
 
-// export const packages_prod = ["react", "react-dom"];
-// export const packages_dev = [
-//   "vite",
-//   "eslint",
-//   "@types/react",
-//   "@types/react-dom",
-//   "@vitejs/plugin-react",
-//   "eslint-plugin-react",
-//   "eslint-plugin-react-hooks",
-//   "eslint-plugin-react-refresh",
-// ];
-// export const packages_redux = ["react-redux", "@reduxjs/toolkit"];
-// export const packages_router = ["react-router-dom"];
-
 export const packages: {
   prod: string[];
   dev: string[];

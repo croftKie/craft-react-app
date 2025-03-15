@@ -1,8 +1,8 @@
 export const redux_files = [
-    {
-        name: "App.jsx",
-        path: "/src",
-        content: `import React, { useState } from 'react';
+  {
+    name: "App.jsx",
+    path: "/src",
+    content: `import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
@@ -55,11 +55,11 @@ export default function App() {
 </>
   );
 }`,
-    },
-    {
-        name: "Main.jsx",
-        path: "/src",
-        content: `import React from 'react'
+  },
+  {
+    name: "Main.jsx",
+    path: "/src",
+    content: `import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux';
 import { store } from './redux/store.js';
@@ -73,11 +73,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 </Provider>
   </React.StrictMode>,
 )`,
-    },
-    {
-        name: "store.js",
-        path: "/src/redux",
-        content: `import { configureStore } from '@reduxjs/toolkit';
+  },
+  {
+    name: "store.js",
+    path: "/src/redux",
+    content: `import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counterSlice';
 
 export const store = configureStore({
@@ -85,11 +85,11 @@ export const store = configureStore({
 counter: counterReducer,
   },
 });`,
-    },
-    {
-        name: "counterSlice.js",
-        path: "/src/redux",
-        content: `import { createSlice } from '@reduxjs/toolkit';
+  },
+  {
+    name: "counterSlice.js",
+    path: "/src/redux",
+    content: `import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   value: 0,
   status: 'idle',
@@ -115,13 +115,13 @@ export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 export const selectCount = (state) => state.counter.value;
 
 export default counterSlice.reducer;`,
-    },
+  },
 ];
 export const react_files = [
-    {
-        name: "App.jsx",
-        path: "/src",
-        content: `import { useState } from 'react'
+  {
+    name: "App.jsx",
+    path: "/src",
+    content: `import { useState } from 'react'
 import './css/App.css'
 
 function App() {
@@ -146,11 +146,11 @@ Click on the Vite and React logos to learn more
   }
 
   export default App`,
-    },
-    {
-        name: "Main.jsx",
-        path: "/src",
-        content: `import React from 'react'
+  },
+  {
+    name: "Main.jsx",
+    path: "/src",
+    content: `import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './css/index.css'
@@ -160,13 +160,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <App />
   </React.StrictMode>,
 )`,
-    },
+  },
 ];
 export const app_files = [
-    {
-        name: "index.html",
-        path: "/",
-        content: `<!doctype html>
+  {
+    name: "index.html",
+    path: "/",
+    content: `<!doctype html>
 <html lang="en">
   <head>
 <meta charset="UTF-8" />
@@ -179,11 +179,11 @@ export const app_files = [
 <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>`,
-    },
-    {
-        name: "vite.config.js",
-        path: "/",
-        content: `import { defineConfig } from 'vite'
+  },
+  {
+    name: "vite.config.js",
+    path: "/",
+    content: `import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
@@ -197,11 +197,11 @@ esbuildOptions: {
 },
   },
 })`,
-    },
-    {
-        name: ".eslintrc.cjs",
-        path: "/",
-        content: `module.exports = {
+  },
+  {
+    name: ".eslintrc.cjs",
+    path: "/",
+    content: `module.exports = {
 root: true,
 env: { browser: true, es2020: true },
 extends: [
@@ -221,11 +221,11 @@ rules: {
   ],
 },
   }`,
-    },
-    {
-        name: ".gitignore",
-        path: "/",
-        content: `# Logs
+  },
+  {
+    name: ".gitignore",
+    path: "/",
+    content: `# Logs
 logs
 *.log
 npm-debug.log*
@@ -249,11 +249,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?`,
-    },
-    {
-        name: "index.css",
-        path: "/src/css",
-        content: `:root {
+  },
+  {
+    name: "index.css",
+    path: "/src/css",
+    content: `:root {
 font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 line-height: 1.5;
 font-weight: 400;
@@ -322,11 +322,11 @@ button {
   background-color: #f9f9f9;
 }
   }`,
-    },
-    {
-        name: "App.css",
-        path: "/src/css",
-        content: `#root {
+  },
+  {
+    name: "App.css",
+    path: "/src/css",
+    content: `#root {
 max-width: 1280px;
 margin: 0 auto;
 padding: 2rem;
@@ -388,45 +388,33 @@ border: 2px solid rgba(112, 76, 182, 0.4);
 background-color: rgba(112, 76, 182, 0.2);
   }
   `,
-    },
+  },
 ];
 export const directories = ["src", "public", "src/assets", "src/css"];
 export const text = {
-    intro: [
-        "Welcome to Craft React App",
-        "Follow the instructions to get started",
-    ],
-    setName: ["React App - ", "Standby for install..."],
-    gitHubCheck: ["Cloned GitHub Repo:"],
-    ReduxToolkit: ["Added Redux Toolkit"],
-    ReactRouter: ["Added React Router"],
-    complete: [" 'cd' into your folder and enjoy! "],
+  intro: [
+    "Welcome to Craft React App",
+    "Follow the instructions to get started",
+  ],
+  setName: ["React App - ", "Standby for install..."],
+  gitHubCheck: ["Cloned GitHub Repo:"],
+  ReduxToolkit: ["Added Redux Toolkit"],
+  ReactRouter: ["Added React Router"],
+  complete: [" 'cd' into your folder and enjoy! "],
 };
-// export const packages_prod = ["react", "react-dom"];
-// export const packages_dev = [
-//   "vite",
-//   "eslint",
-//   "@types/react",
-//   "@types/react-dom",
-//   "@vitejs/plugin-react",
-//   "eslint-plugin-react",
-//   "eslint-plugin-react-hooks",
-//   "eslint-plugin-react-refresh",
-// ];
-// export const packages_redux = ["react-redux", "@reduxjs/toolkit"];
-// export const packages_router = ["react-router-dom"];
+
 export const packages = {
-    prod: ["react", "react-dom"],
-    dev: [
-        "vite@4.5.0",
-        "eslint",
-        "@types/react",
-        "@types/react-dom",
-        "@vitejs/plugin-react",
-        "eslint-plugin-react",
-        "eslint-plugin-react-hooks",
-        "eslint-plugin-react-refresh",
-    ],
-    redux: ["react-redux", "@reduxjs/toolkit"],
-    router: ["react-router-dom"],
+  prod: ["react", "react-dom"],
+  dev: [
+    "vite@4.5.0",
+    "eslint",
+    "@types/react",
+    "@types/react-dom",
+    "@vitejs/plugin-react",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks",
+    "eslint-plugin-react-refresh",
+  ],
+  redux: ["react-redux", "@reduxjs/toolkit"],
+  router: ["react-router-dom"],
 };

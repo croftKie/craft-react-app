@@ -6,9 +6,9 @@
   <p align="center">
     A lightweight CLI for spinning up a React app with common additions and build tools.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/croftKie/craft-react-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Create A PR</a>
   </p>
 </div>
 
